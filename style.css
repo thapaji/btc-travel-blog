@@ -248,9 +248,12 @@ article .btn {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
   }
   .subscription input {
     width: 100%;
-    margin-bottom: 16px;
   }
+  /* article .btn {
+    width: 100%;
+  } */
 }
