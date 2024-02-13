@@ -225,3 +225,32 @@ article .btn {
   text-align: center;
   margin-top: 32px;
 }
+
+/* Media querries */
+
+@media (max-width: 992px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articles,
+  .side-links {
+    width: 100%;
+  }
+  .side-links > div {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .subscription form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .subscription input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
