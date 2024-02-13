@@ -1,0 +1,226 @@
+:root {
+  --primary: blue;
+  --shadow: -5px 5px 10px 5px gray;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.main-container {
+  background-color: aliceblue;
+  height: 60vh;
+}
+
+.global-header {
+  background-color: orange;
+  padding: 20px 0px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  color: white;
+  background-color: var(--primary);
+  padding: 20px 0px;
+}
+
+.logo {
+  background: white;
+  color: var(--primary);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > div {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px dotted var(--primary);
+}
+
+.message-box {
+  background: transparent;
+}
+
+.menu > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu > ul li {
+  margin-left: 16px;
+}
+
+.menu > ul li:hover {
+  color: red;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.image-container {
+  background-image: url(./assets/mountain.jpg);
+  background-size: cover;
+  height: 60vh;
+}
+
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.message-box {
+  background-color: rgba(58, 35, 35, 0.8);
+  padding: 30px;
+  width: 45%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-header {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.message-box hr {
+  width: 100%;
+}
+
+.message {
+  font-size: 12px;
+}
+
+.main {
+  display: flex;
+  gap: 16px;
+}
+
+.articles {
+  width: 66%;
+}
+article {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  padding: 20px 16px;
+  margin-bottom: 24px;
+}
+
+article .art-img {
+  width: 400px;
+}
+
+article .title {
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: bolder;
+}
+.btn {
+  background: orangered;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+.btn hover {
+  cursor: pointer;
+}
+
+article .btn {
+  float: right;
+}
+
+.side-links {
+  width: 34%;
+}
+
+.read-by-country {
+  background: rgba(153, 205, 50, 0.5);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.read-by-date {
+  background: rgba(153, 205, 50, 0.5);
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.recommendation {
+  background-color: rgba(105, 153, 10, 0.24);
+  padding: 32px 0;
+  margin-top: 32px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  width: 350px;
+  box-shadow: var(--shadow);
+  background: white;
+  padding-bottom: 32px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+.card img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card .container .btn {
+  width: 100%;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.subscription form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription input {
+  line-height: 42px;
+  padding: 5px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.68);
+  border-radius: 8px;
+  color: gray;
+}
+
+.footer {
+  background: #000;
+  color: white;
+  padding: 64px;
+  text-align: center;
+  margin-top: 32px;
+}
